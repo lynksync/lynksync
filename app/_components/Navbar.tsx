@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ArrowRight from "../_assets/arrow-right.svg";
-import Logo from "../_assets/logosaas.png";
+import Logo from "../_assets/main_logo.svg";
 import MenuIcon from "../_assets/menu.svg";
 
 
@@ -21,7 +21,7 @@ export default function Navbar() {
             <div className="container">
                 <div className="flex items-center justify-between">
                 <Link href="/">    
-                <Image src={Logo} alt="Saas Logo" height={40} width={40}/>
+                <Image src={Logo} alt="Saas Logo" height={200} width={200}/>
                 </Link>
                 <Image src={MenuIcon} alt="Menu Icon" className="h-5 w-5 md:hidden"/>
                 <nav className="hidden md:flex gap-6 text-black items-center">
