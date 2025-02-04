@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
 import Navbar from "./_components/Navbar";
+import NavbarAuth from "./_components/NavbarAuth";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={` ${dmSans.className} antialiased bg-[#EAEEFE]`}>
-        <Navbar />
+        <NavbarAuth />
         {children}
       </body>
     </html>
